@@ -1,0 +1,83 @@
+h1 {
+    text-align: center;
+    font-family: 'Arial Black', Arial, sans-serif;
+    color: #333;
+}
+
+h2 {
+    text-align: left;
+    font-family: 'times new roman', Times, serif;
+    color: rgb(46, 45, 45);
+
+}
+
+#tabelaDeIMC {
+    margin: auto;
+    border: 5px solid #000;
+    
+    width: 50%;
+    font-family: Arial, sans-serif;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(128, 128, 128);
+}
+
+#tabelaDeIMC th, #tabelaDeIMC td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+    border-color: antiquewhite;
+}
+
+#titulo1 {
+    background-color: #4CAF50;
+    color: white;
+}
+#titulo2 {
+    background-color: #4CAF50;
+    color: white;
+}
+#paragrafoInicial {
+    font-family: 'Verdana', sans-serif;
+    font-size: 20px;
+    color: #555;
+    margin: 20px;
+    text-align: justify;
+    padding: 4px;
+    white-space: 5px;
+    margin-bottom: 20px;
+}
+#paragrafoInicialPt2 {
+    font-family: 'Verdana', sans-serif;
+    font-size: 20px;
+    color: #555;
+    margin: 20px;
+    text-align: justify;
+    padding: 4px;
+    white-space: 5px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin: 20px auto;
+    width: 300px;
+    padding: 20px;
+    border: 3px solid #ccc;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+}
+
+h3 {
+    text-align: center;
+    font-family: "arial";
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border: 5px solid black;
+    padding: 5px;
+    border-radius: 50px;
+    border-style: double;
+    
+   
+}
