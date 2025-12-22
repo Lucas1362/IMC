@@ -6,13 +6,13 @@
 
 /* BODY */
 body {
-    background-color: #dcdcdc;
+    background-color: rgba(0, 0, 0, 0.808);
     font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 /* CARD PRINCIPAL */
 .card {
-    background-color: antiquewhite;
+    background-color: #D4AF37;
     max-width: 1200px;
     margin: 60px auto;
     padding: 50px;
