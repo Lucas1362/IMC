@@ -123,3 +123,25 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
+
+/* MENSAGEM DE ERRO */
+#mensagemErro {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+
+    text-align: center;
+    font-size: 15px;
+    text-shadow: 1px 0px 0px black;
+    opacity: 100%;
+}
+#caixaDeErro {
+    background-color:rgb(126, 43, 43);
+    opacity: 90%;
+    border: 2px solid #f5c6cb;
+    padding: 15px;
+    border-radius: 10px;
+    margin-right: 300px;
+    margin-top: 10px;
+    margin-left: 300px;
+}

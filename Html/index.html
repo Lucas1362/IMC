@@ -61,6 +61,7 @@
         <h2>Vamos calcular o seu IMC!</h2>
         <h3>Preencha os campos abaixo</h3>
         
+        <!--formulario pra coletar os dados do usuario-->
         <form onsubmit="calcularIMC(event)">
             <label>Peso (kg)</label>
             <input type="number" id="peso" step="0.1" required>
@@ -70,11 +71,16 @@
             
             <button type="submit">Calcular IMC</button>
         </form>
-        
+
+        <div id="caixaDeErro">
+           <!--Área para exibir o resultado-->
+            <p id="mensagemErro"></p>
+            
+        </div>
     </main>
     
     
     <script src="/javaScript/script.js" defer></script>
-    
+
 </body>
 </html>
