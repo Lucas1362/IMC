@@ -6,7 +6,9 @@
 
 /* BODY */
 body {
-    background-color: rgba(0, 0, 0, 0.808);
+    background-image: url("../images/ft.png");
+    background-attachment: fixed;
+    opacity: 90%;
     font-family: 'Segoe UI', Arial, sans-serif;
 }
 

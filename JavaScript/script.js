@@ -16,7 +16,7 @@ function calcularIMC(event) {
 
         setTimeout(() => {
             caixaDeErro.style.display = "none";
-        }, 3000);
+        }, 10000);
         //validação de dados
     }
     if(isNaN(peso) || isNaN(altura)){
