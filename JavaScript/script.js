@@ -1,4 +1,4 @@
-alert("Olá, bem-vindo à calculadora de IMC!");
+
 function calcularIMC(event) {
 
     // Previne o comportamento padrão do formulário
@@ -7,6 +7,8 @@ function calcularIMC(event) {
     const altura = parseFloat(document.getElementById("altura").value);
     const mensagemErro = document.getElementById("mensagemErro");
     const caixaDeErro = document.getElementById("caixaDeErro");
+    const pesoId = document.getElementById("pesoId");
+    const alturaId = document.getElementById("alturaId");
 
     function mostrarMensagem(texto, cor = "red") {
         mensagemErro.textContent = texto;
@@ -30,7 +32,10 @@ function calcularIMC(event) {
     }
         
     const imc = peso / (altura * altura);
-    mostrarMensagem(`Seu IMC é ${imc.toFixed(2)}`, "green");
+    mostrarMensagem(`Seu IMC é ${imc.toFixed(2)}`, "white");
+    pesoId.textContent = "Digite seu peso (kg)";
+    alturaId.textContent = "Digite sua altura (m)";
+
         
 }
 
