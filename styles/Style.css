@@ -8,7 +8,7 @@
 body {
     background-image: url("../images/ft.png");
     background-attachment: fixed;
-    opacity: 90%;
+    opacity: 95%;
     font-family: 'Segoe UI', Arial, sans-serif;
 }
 
@@ -98,11 +98,11 @@ h3 {
     font-size: 20px;
 }
 
-/* FORMULÁRIO */
+/* FORMULÁRIO DE CÁLCULO */
 form {
-    margin: 40px auto;
+    margin: center;
     width: 320px;
-    padding: 25px;
+    padding: center;
     border: 30px solid #D4AF37;
     border-radius: 15px;
     background-color: rgb(99, 98, 98);
@@ -124,6 +124,25 @@ input {
     border: 1px solid #ccc;
     border-radius: 15px;
     opacity: 50%;
+    text-align: center;
+    
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+input::placeholder {
+    color:#aaa;
+    opacity: 70%;
+}
+
+input:focus {
+    border-color: #D4AF37;
+    box-shadow: 0 0 16px rgba(212, 175, 55, 0.6);
+    transition: 0.5s;
 }
 
 button {
@@ -132,11 +151,75 @@ button {
     margin-top: 5px;
     font-size: 16px;
     cursor: pointer;
-    color: white;
+    color: black;
     font-weight: bold;
     background-color: #D4AF37;
+    background: linear-gradient(135deg, #D4AF37, #b8962e);
     border: 1px solid #ccc;
     border-radius: 15px;
+}
+
+.imcForm{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.formularioIMC {
+    justify-content: center;
+    margin-left: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #D4AF37;
+    width: 320px;
+    box-shadow: 0 0 25px rbga(212, 175, 55, 0.35);
+
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #D4AF37;
+    opacity: 100%;
+}
+
+.campo input {
+    width: 100%;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    outline: none;
+    border: 1px solid #555;
+    border-radius: 8px;
+
+}
+
+.campo input:focus{
+    border-color: #D4AF37;
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.6);
+}
+
+.imcForm button {
+    background-color: #D4AF37;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+
+.imcForm button:hover {
+    transform: translateY(-5px) translateX(2px);
+    transition: 0.5s;
+    box-shadow: 5px 18px 20px rgba(212, 175, 55, 0.4);
 }
 
 /* MENSAGEM DE ERRO */
@@ -156,7 +239,7 @@ button {
     border: 2px solid #f5c6cb;
     padding: 15px;
     border-radius: 10px;
-    margin-right: 300px;
-    margin-top: 10px;
-    margin-left: 300px;
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: center;
 }
