@@ -22,9 +22,7 @@ function calcularIMC(event) {
         setTimeout(() => {
             caixaDeErro.classList.remove("show");
         }, 10000);
-       
-
-        //validação de dados
+          //validação de dados
     }
     if(isNaN(peso) || isNaN(altura)){
          mostrarMensagem("Por favor, insira valores numéricos válidos para peso e altura.");
@@ -35,11 +33,29 @@ function calcularIMC(event) {
         return;
             
     }
-        
+
     const imc = peso / (altura * altura);
-    mostrarMensagem(`Seu IMC é ${imc.toFixed(2)}`, "white");
-    pesoId.textContent = "Digite seu peso (kg)";
-    alturaId.textContent = "Digite sua altura (m)";
+    let classificacao = "";
+    let legenda = "";
+     
+    if (imc < 18.5) {
+        classificacao = "Abaixo do peso";
+        legenda = "Você está abaixo do peso ideal. Considere consultar um profissional de saúde.";
+    } else if (imc < 25){
+        classificacao = "Peso normal";
+        legenda = "Parabéns! Você está no peso ideal segundo dados da OMS.";
+    }else if (imc < 30){
+        classificacao = "Sobrepeso";
+        legenda = "Voce esta esta na faixa considerada de sobrepeso. Fique atento a sua saude!";
+    }else{
+        classificacao = "Obesidade";
+        legenda = "Cuidado! Você está na faixa de obesidade. Recomenda-se buscar orientação médica.";
+    }
+    mostrarMensagem(`Seu IMC é ${imc.toFixed(2)} - ${classificacao}.  ${legenda}`, "#D4AF37");
+   
+    //mostrarMensagem(`Seu IMC é ${imc.toFixed(2)}`, "white");
+    //pesoId.textContent = "Digite seu peso (kg)";
+    //alturaId.textContent = "Digite sua altura (m)";
 
  
 }
