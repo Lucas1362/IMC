@@ -148,6 +148,16 @@ input:focus {
     transition: 0.5s;
 }
 
+.altura-text {
+    opacity: 0;
+    position: absolute;
+    transform: translateX(5px) scale(1);
+    transition: opacity 0.5s ease;
+
+}
+
+
+
 button {
     width: 100%;
     padding: 10px;
@@ -229,7 +239,7 @@ button {
     font-family: 'Courier New', Courier, monospace;
     margin-top: 20px;
     color: rgb(0, 0, 0);
-    text-align: center;
+    text-align: justify;
     font-size: 20px;
     text-shadow: 1px 0px 0px black;
     opacity: 100%;

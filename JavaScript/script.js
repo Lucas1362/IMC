@@ -11,7 +11,7 @@ function calcularIMC(event) {
     const alturaId = document.getElementById("alturaId");
 
     function mostrarMensagem(texto, cor = "white") {
-        mensagemErro.textContent = texto;
+        mensagemErro.innerHTML = texto;
         mensagemErro.style.color = cor;
         //caixaDeErro.style.display = "block";
 
@@ -51,7 +51,7 @@ function calcularIMC(event) {
         classificacao = "Obesidade";
         legenda = "Cuidado! Você está na faixa de obesidade. Recomenda-se buscar orientação médica.";
     }
-    mostrarMensagem(`Seu IMC é ${imc.toFixed(2)} - ${classificacao}.  ${legenda}`, "#D4AF37");
+    mostrarMensagem(`Seu IMC é ${imc.toFixed(2)} - ${classificacao}. <br><br>  ${legenda}`, "#D4AF37");
    
     //mostrarMensagem(`Seu IMC é ${imc.toFixed(2)}`, "white");
     //pesoId.textContent = "Digite seu peso (kg)";
