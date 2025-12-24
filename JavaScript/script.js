@@ -10,7 +10,7 @@ function calcularIMC(event) {
     const pesoId = document.getElementById("pesoId");
     const alturaId = document.getElementById("alturaId");
 
-    function mostrarMensagem(texto, cor = "red") {
+    function mostrarMensagem(texto, cor = "white") {
         mensagemErro.textContent = texto;
         mensagemErro.style.color = cor;
         caixaDeErro.style.display = "block";
@@ -18,7 +18,7 @@ function calcularIMC(event) {
 
         setTimeout(() => {
             caixaDeErro.style.display = "none";
-        }, 10000);
+        }, 5000);
         //validação de dados
     }
     if(isNaN(peso) || isNaN(altura)){
@@ -35,7 +35,6 @@ function calcularIMC(event) {
     mostrarMensagem(`Seu IMC é ${imc.toFixed(2)}`, "white");
     pesoId.textContent = "Digite seu peso (kg)";
     alturaId.textContent = "Digite sua altura (m)";
-
-        
+ 
 }
 
