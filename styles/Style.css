@@ -234,15 +234,31 @@ button {
     font-size: 20px;
     text-shadow: 1px 0px 0px black;
     opacity: 100%;
+    transition: 2s ease-in-out;
+    transform: translateX(5px);
 }
 #caixaDeErro {
-    display: none;
+    
     background-color: rgb(41, 40, 40);
-    opacity: 90%;
-    border: 2px solid #f5c6cb;
+    opacity: 0%;
+    border: 2px solid grey;
     padding: 15px;
     border-radius: 10px;
     margin: 20px auto;
     max-width: 400px;
     text-align: center;
+    transform: translateY(-10px) scale(0.95);
+    transform: translateX(0px) scale(0.95);
+    pointer-events: none;
+    transition:  opacity 0.4s ease, transform 0.4s ease;
+
+       
+}
+
+#caixaDeErro.show {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    transform: translateY(5) scale(1);
+    pointer-events: auto;
+
 }
